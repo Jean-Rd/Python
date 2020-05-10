@@ -19,7 +19,7 @@ for i in range(fila_1):
         
 for i in matriz_1:
     print(i)
-    FO RI NN MATRZ_1
+    
     
      
 for i in matriz_2:

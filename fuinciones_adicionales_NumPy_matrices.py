@@ -19,10 +19,10 @@ print(a.min(),'\n') # Minimo de todos, puede guardar en variable
 a = np.arange(12).reshape(3,4)
 print(a,'\n')
 
-b = a.sum(axis = 0)  # Suma de la primera columna
+b = a.sum(axis = 0)  # Suma de las columnas
 print(b,'\n')  #lo guarda en una columna
 
-b = a.min(axis=1)  # calor minimo de cada columna
+b = a.min(axis=1)  # calor minimo de cada fila
 print(b,'\n') # lo guarda en un array
 
 b = a.cumsum(axis=1) #suma acumulativa, la suma es por fila
@@ -32,4 +32,7 @@ print('----------un_ejemplo_de_iteraciomn--------')
 print(a)
 for i in a.flat:  # matriz_mame.flat --> con esa fumcion podemos operar con cada valor de la matris
     print(i)
+    
+print(a.flat) #flat solo funciona con iteraciones for por ejejemoklo
+
     
