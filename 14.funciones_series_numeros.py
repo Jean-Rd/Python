@@ -31,3 +31,5 @@ while 1:
         break
     else:
         print('Por favor digite una opcion valida.')
+        opcion = int(input('\n\t1. Continuar\n\t2. Salir\n\nDgite una opcipn: '))
+    
