@@ -11,7 +11,7 @@ def menu():
     while not('a' <= opcion <= 'c'):
         print('\n\n\tCajero Automatico\n\ta) Ingresar Dinero\n\tb) Retirar Dinero\n\tc) Consultar saldo')
         opcion = input('Ingrese una opcion: ')
-        if not(opcion >= 'a' and opcion <= 'b'):
+        if not(opcion >= 'a' and opcion <= 'c'):
             print('Por favor ingrese una opcion valida.')
     return opcion
 
