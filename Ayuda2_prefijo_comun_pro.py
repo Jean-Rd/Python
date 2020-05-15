@@ -5,6 +5,7 @@ Created on Thu May 14 15:28:59 2020
 @author: DELL.E5430.SSD
 """
 
+import datetime
 
 def obtener_prefijo_más_común(cadena):
 
@@ -32,9 +33,13 @@ def obtener_prefijo_más_común(cadena):
 
 
 if __name__ == "__main__":
-
-    cadena = "el ellos ella"
+    
+    ahora = datetime.datetime.now()
+    
+    cadena = input('Ingrese un texto: ')
 
     prefijo = obtener_prefijo_más_común(cadena)
 
     print(prefijo)
+    
+    print(ahora.strftime('%d/%m/%Y  %H:%M:%S'))
