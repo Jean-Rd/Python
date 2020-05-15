@@ -28,7 +28,7 @@ def obtener_prefijo_más_común(cadena):
 
     return ""
 
-
+# Programa Principal
 if __name__ == "__main__":
 
     cadena = 'poliedro policia polifona polinizar polaridad politica'
@@ -36,3 +36,5 @@ if __name__ == "__main__":
     prefijo = obtener_prefijo_más_común(cadena)
 
     print(prefijo)
+    
+
