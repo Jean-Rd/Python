@@ -15,4 +15,4 @@ def prueba_menu():
             print('Por favor ingrese una opcion valida.')
     return opcion
 
-a = prueba_menu()
+prueba_menu()
