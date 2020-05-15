@@ -13,6 +13,7 @@ def sumatoria(a,b):
     return sum(x)
 
 # Programa Principal
+
 ahora = datetime.datetime.now()
 
 a = int(input('Sumatoria Inicio: '))
