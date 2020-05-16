@@ -15,8 +15,6 @@ def numero_amigo(n):
         return suma
 
 def tabla_amigos(m):
-    c_amigos = []
-    n_numeros = []
     amiguitos = []
     for i in range(1,m+1):
         posible_amigo = numero_amigo(i)
