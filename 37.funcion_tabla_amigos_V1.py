@@ -22,7 +22,7 @@ def tabla_amigos(m):
             c.append(i)
             a.append(numeros_amigos(i))
     for i in range(len(c)):
-        if(numeros_amigos(a[i]) == c[i] and a[i] != c[i] and c[i] not in amigos and a[i not in amigos]):
+        if(numeros_amigos(a[i]) == c[i] and a[i] != c[i] and c[i] not in amigos and a[i] not in amigos):
             amigos.append(c[i] and a[i])
             print(f'Los numeros {c[i]}^{a[i]}, son amigos.')
 
