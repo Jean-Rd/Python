@@ -19,8 +19,8 @@ def tabla_amigos(m):
     for i in range(1,m+1):
         posible_amigo = numero_amigo(i)
         if(posible_amigo in range(1,m+1)):
-            if(numero_amigo(posible_amigo) == i and posible_amigo != i and i and posible_amigo not in amiguitos):
-                amiguitos.append(posible_amigo and i)
+            if(numero_amigo(posible_amigo) == i and posible_amigo != i and posible_amigo not in amiguitos):
+                amiguitos.append(i)
                 print('Los numeros:',i,'^',posible_amigo,', son amigos.')
 
 # Programa Principal
