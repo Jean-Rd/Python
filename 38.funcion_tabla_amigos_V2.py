@@ -27,6 +27,6 @@ def tabla_amigos(m):
 ahora = datetime.datetime.now()
 
 numero = int(input('Digite un numero --> '))
-print(tabla_amigos(numero))
+tabla_amigos(numero)
 print()
 print(ahora.strftime('%d/%m/%Y  %H:%M:%S'))
