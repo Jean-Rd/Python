@@ -33,6 +33,6 @@ ahora =  datetime.datetime.now()
 
 numero = int(input('Dame un numero: '))
 
-print(tabla_perfecto(numero))
+tabla_perfecto(numero)
 print()
 print(ahora.strftime('%d/%m/%Y  %H:%M:%S'))
