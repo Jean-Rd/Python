@@ -8,7 +8,6 @@ Created on Sun May 17 14:45:10 2020
 
 import datetime
 import time
-import sys
 
 def menu_opciones():
     print("\n\n")
@@ -71,9 +70,9 @@ def estudiantes_reprobados(ALUMNOS, NOTAS):
 
 ahora = datetime.datetime.now()
 
-lista_alumnos = ["Carlos","Sneider","Yessica"]
-lista_notas = [50,75,80]
-"""
+lista_alumnos = []
+lista_notas = []
+
 cant_alumnos = int(input('Ingrese la cantidad de estudiantes: '))
 for i in range(cant_alumnos):
     notas = 0
@@ -83,7 +82,7 @@ for i in range(cant_alumnos):
         print('Error, la nota no es valida; Intentelo de nuevo.')
         notas = round(float(input(f'Ingrese la nota del estudiante {lista_alumnos[i]}: ')))
     lista_notas.append(notas)
-"""
+
 OPCIONES = {
         '1':'Buscar estudiante',
         '2':'Cantidad de estudiantes aprobados',
@@ -131,6 +130,6 @@ while (True):
         print('\n\n\tSalir\n')
         print('Opcion requerida:',opcion_requerida)
         print('\nLamentamos verlo irse.')
-        sys.exit()
+        break
 
     time.sleep(5)
