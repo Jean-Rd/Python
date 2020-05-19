@@ -54,7 +54,7 @@ def TotalWinner(NamesCyclists,DatesTimes):
 
 def GetNumber(DatesTimes):
     Stage = None
-    while Stage not in 'range(len(DatesTimes[0]))':
+    while Stage not in range(len(DatesTimes[0])):
         Stage = None
         print(f'La carrera cuenta con {len(DatesTimes[0])}, etapas.')
         if Stage == None:
