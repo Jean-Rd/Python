@@ -8,6 +8,26 @@ Created on Sat May 16 23:35:05 2020
 import time
 import datetime
 
+def NumberOfStudentsForUser():
+    while True:
+        x = input('Digita la cantidad de estudiantes: ')
+        try:
+            int(x)
+        except ValueError:
+            print(f'{x}, no es un numero.')
+            continue
+        return int(x)
+    
+def NotesForUser():
+    while True:
+        x = input('Ingrese la nota del estudiante: ')
+        try:
+            float(x)
+        except ValueError:
+            print('No es un numero.')
+            continue
+        return float(x)
+
 def NamesOfTheStudents(CantAlumnos):
     NameStudent = []
     for i in range(CantAlumnos):
@@ -17,10 +37,8 @@ def NamesOfTheStudents(CantAlumnos):
 def StudentNotes(NameStudent):
     NoteStudent = []
     for i in range(len(NameStudent)):
-        Nota = float(input(f'Digite la nota del estudiante {NameStudent[i]}: '))
-        while Nota not in range(0,101):
-            print('Error en la nota.')
-            Nota = float(input(f'Digite la nota del estudiante {NameStudent[i]}: '))
+        print('\t------------------\n',NameStudent[i])
+        Nota = NotesForUser()
         NoteStudent.append(Nota)
     return NoteStudent
         
@@ -44,10 +62,15 @@ def ApprovedStudents(AllDatesStudents,AllNotesStudents):
         if AllNotesStudents[i] in range(51,101):
             print('Estudiante:',AllDatesStudents[i])
             print('Notas:',AllNotesStudents[i])
+            print('Aprobo.')
+        else:
+            print('Estudiante:',AllDatesStudents[i])
+            print('Notas:',AllNotesStudents[i])
+            print('Reprobo.')
 
 def NumbersApprovedStudent(AllNotesStudents):
     Approveds = 0
-    for i in range(len(AllNotesStudents)):
+    for i in range(len(AllNotesStudents)):  
         if AllNotesStudents[i] in range(51,101):
             Approveds += 1
     print('Cantidad de estudiantes aprobados:',Approveds)
@@ -83,7 +106,7 @@ ahora = datetime.datetime.now()
 ListStudents = ['MAria','Jean','Lennys']
 ListNotes = [67,89,78]
 '''
-NumberStudents = int(input('Digite la cantidad de estudiantes: '))
+NumberStudents = NumberOfStudentsForUser()
 ListStudent = NamesOfTheStudents(NumberStudents)
 ListNots = StudentNotes(ListStudent)
 
